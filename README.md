@@ -6,20 +6,22 @@ How to implement this library:
 * Copy the lib file to the projects 'libs' folder
 
 * Add the follwing in project build.gradle file
-  allprojects {
-    repositories {
-        .....
-        flatDir {
-            dirs 'libs'
+
+      allprojects {
+        repositories {
+            .....
+            flatDir {
+                dirs 'libs'
+            }
+          }
         }
-    }
-  }
   
  * In the app build.gradle file, add:
-  dependencies {
-    ...
-    compile(name: 'paynow-checkout', ext: 'aar')
-  }
+ 
+        dependencies {
+          ...
+          compile(name: 'paynow-checkout', ext: 'aar')
+        }
   
   * In your Activity add the following pieces of code:
     
@@ -39,10 +41,7 @@ How to implement this library:
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
-            context = this;
-
+           
         ....
         CheckoutInterface.getInstance().setCheckoutListener(this);
 
