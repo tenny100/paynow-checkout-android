@@ -34,8 +34,6 @@ How to implement this library:
         public class MainActivity extends Activity implements CheckoutListener {
 
         private static final int REQUESTCODE = 255;
-        private Context context;
-        private PrefManager pref;
         private String pollUrl;
         private String id, key;
 
