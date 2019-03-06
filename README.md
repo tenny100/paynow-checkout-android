@@ -51,7 +51,7 @@ How to implement this library:
                 Constants.INTEGRATION_KEY = "xxxx-xxxx-xxx-xxxxxxxxxx;
                 Constants.RESULT_URL = "https://yourserver.com/result/url";
                 Constants.RETURN_URL = "https://yourserver.com/return/url";
-                Constants.PING_URL = "https://yourserver.com"; // for checking networkconnectivity
+                Constants.PING_URL = "https://yourserver.com"; // for checking network connectivity
 
                 checkout = new Checkout(MainActivity.this);
                 checkout.init(Constants.INTEGRATION_ID, Constants.INTEGRATION_KEY);
